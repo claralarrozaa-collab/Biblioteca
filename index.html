@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina</title>
+    <style>
+        /* Reset básico de márgenes y padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* Cuerpo */
+        body {
+            margin: 2px;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: rgb(127, 194, 121);
+        }
+        /* Contenedor principal del header */
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            min-height: 80px;
+            padding: 15px 30px;
+            background-color: rgb(234, 228, 228);
+            border-bottom: 2px solid rgb(0, 0, 0);
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: rgb(19, 18, 18);
+            padding: 5px 10px;
+            border: 1px solid black;
+            border-radius: 4px;
+        }
+        .nav {
+            display: flex;
+            gap: 20px;
+            padding: 10px 0;
+        }
+        .nav a {
+            text-decoration: none;
+            color: rgb(10, 10, 10);
+            font-size: 16px;
+            padding: 8px 12px;
+            border-radius: 4px;
+            transition: background-color 0.35;
+        }
+        .nav a:hover {
+            color: rgb(129, 158, 95);
+        }
+        .BTN {
+            text-decoration: none;
+            font-size: 16px;
+            padding: 16px;
+            border-radius: 8px 12px;
+            transition:background-color 0.35;
+            cursor: pointer;
+            letter-spacing: 1px;
+            /*Transicion que propiedades animar y duracion*/
+            transition:
+            tranform 0.3s ease;
+            box-shadow: 0.3 ease;
+            background: 0.3s ease;
+            color: rgb(87, 143, 90);
+        
+        }
+        .BTN:hover {
+            transform: translateY(-4px) scale(1.05);
+            box-shadow: 0 15px 30px rgba(120, 32, 36, 0.6);
+            background: linear-gradient(135deg, #506829, #0d0e0d);
+            color: rgb(252, 249, 249);
+        }
+        .BTN:active {
+            transform: translateY(2px) scale(0.98);
+            box-shadow: 0 4px 10px rgba(120, 32, 36, 0.6);
+        }
+        .footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            height: 80px;
+            padding: 15px 30px;
+            background-color: rgb(134, 190, 117);
+            border-top: 2px solid rgb(27, 27, 27);
+        }
+         .navi {
+            display: flex;
+            gap: 20px;
+            padding: 10px 0;
+        }
+        .navi a {
+            text-decoration: none;
+            color: #080808;
+            font-size: 16px;
+            padding: 8px 12px;
+            border-radius: 4px;
+            transition: background-color 0.35s;
+        }
+        .navi a:hover {
+            background-color: #e5e5e9;
+        }
+        .menu {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        background-color: #6ab86e;
+        }
+        .aside {
+        display: flex;
+        width: 350px;
+        height: 530px;
+        padding: 80px;
+        background-color: #eff3f0;
+        text-decoration: none;
+    }
+    
+.nav2 h2 {
+    color: black;
+    text-decoration: none;
+    font-size:16px;
+    padding: 16px;
+}
+.info {
+    display: flex;
+    padding: 15px;
+    border-radius: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.large-icons {
+    font-size: 24px;
+    color: aqua;
+}
+        @media (max-width: 600px) {
+            .header {
+                flex-direction: column;
+                height: auto;
+                padding: 15px;
+                gap: 15px;
+            }
+            .nav {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Página</div>
+        <nav class="nav">
+            <i class="material-icons-outlined">
+                search
+            </i>
+            <a href="https://www.ellibrototal.com/ltotal/">
+                Inicio
+            </a>
+            <i class="material-icons-outlined">
+                money
+            </i>
+            <a href="https://www.buscalibre.com.ar/">
+                Busca libre
+            </a>
+            <i class="material-icons-outlined">
+                star
+            </i>
+            <a href="https://www.planetadelibros.com.ar/contactar">
+                Informacion
+            </a>
+        </nav>
+        <button class="BTN">Registrarse</button>
+    </header>
+    <main class="menu">
+    <aside class="aside">
+        <nav class="nav2">
+            <h2>Descubre el mundo desde lo más hermoso de la fantasía, lo más aterrador del terror, lo más romántico del romance y la mejor experiencia de la lectura y escritura.</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpvByrOQGN8OqqaxAq_97hqIrELxTNV0kKomU72K0UHX_L1Q_qp3dFvKM&s=10" alt="descripcion" width="210px" height="280px">
+        </nav>
+    </aside>
+    <div class="info">
+        <h2><p>La Tierra de las Historias es una saga de fantasía y aventuras de Chris Colfer. Narra la historia de dos hermanos gemelos, Alex y Conner Bailey, quienes, gracias a un libro mágico heredado, son transportados a un mundo donde viven los personajes de los cuentos clásicos. Allí, enfrentan villanos, descubren secretos familiares, exploran reinos mágicos y aprenden lecciones sobre amistad, valor y confianza en sí mismos, mientras buscan la forma de regresar a casa.</p></h2>
+    </div>
+</main>
+<div>
+            <h2>La lectura, la poesía y ver el mundo totalmente diferente como todos dicen como verlo, te harán la persona más locamente feliz.</h2>
+        </div>
+    </footer>
+    <footer class="footer">
+        <nav class="navi">
+            <a href="https://www.instagram.com/chriscolfer/?hl=es">Instagram</a>
+            <a href="https://www.facebook.com/chriscolfer/?locale=es_LA">Facebook</a>
+            <a href="https://x.com/Librosyescritor">X</a>
+            <a href="https://www.tiktok.com/@la_biblioteca._.perdida">Tiktok</a>
+        </nav>
+    </footer>
+</body>
+</html>
